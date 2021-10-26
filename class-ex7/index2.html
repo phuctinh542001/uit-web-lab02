@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./themify-icons-font/themify-icons/themify-icons.css">
+
+    <style>
+        .skill-item input {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 25px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+        .skill-item input::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: #04AA6D;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="show">
+        <div>
+            <img id="avatar_s" src="./ironman.jpg" width="500px"/>
+        </div>
+        <div>
+            <i class="ti-briefcase icon"></i>
+            <span class="username_s"></span>
+        </div>
+        <div>
+            <i class="ti-home icon"></i>
+            <span class="address_s"></span>
+        </div>
+        <div>
+            <i class="ti-mobile icon"></i>
+            <span class="tel_s"></span>
+        </div>
+        <div>
+            <i class="ti-email icon"></i>
+            <span class="email_s"></span>
+        </div>
+        <hr>
+        <div>
+            <span id="title-kynang">Kỹ năng</span>
+            <i class="ti-settings icon"></i>
+            <div class="skill-list">
+            </div>
+            
+        </div>
+    </form>
+    <!-- <script type="module" src="./script.js"></script> -->
+    <script type="text/javascript">
+        var People = JSON.parse(localStorage.getItem("People"));
+
+        document.getElementsByClassName("username_s")[0].innerHTML = People.name;
+        document.getElementsByClassName("address_s")[0].innerHTML = People.address;
+        document.getElementsByClassName("tel_s")[0].innerHTML = People.tel;
+        document.getElementsByClassName("email_s")[0].innerHTML = People.email;
+        var skill = People.skillList;
+        for (let i = 0; i < skill.length; i++) {
+            var item = document.createElement("div");
+            item.classList = "skill-item";
+            item.innerHTML = 
+            `<h3>${skill[i][0]}</h3>
+                <input class="skill-range" value="${skill[i][1]}" id="rand" type="range" size="50" min="0" max="100" step="10">
+            `;
+
+            document.getElementsByClassName("skill-list")[0].appendChild(item);
+        }
+    </script> 
+</body>
+
+</html>

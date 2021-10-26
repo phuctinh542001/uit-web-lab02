@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Câu 4 - Tại lớp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="bai4.js"></script>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="get" id="form_register">
+      <table style="width: 25%" id="table_register">
+        <tr>
+          <td style="text-align: center" colspan="2">
+            <strong>Mua vé</strong>
+          </td>
+        </tr>
+        <tr>
+          <td>Ngày chiếu</td>
+          <td>
+            <input
+              type="text"
+              placeholder="dd/mm/yyyy"
+              class="ngayChieu"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>Phim</td>
+          <td>
+            <select name="Phim" class="phim">
+              <option>Yêu em bất chấp</option>
+              <option>Tháng năm rực rỡ</option>
+              <option>Và em sẽ đến</option>
+              <option>Chuyện ma lúc 3h sáng</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Suất chiếu</td>
+          <td>
+            <select name="Suất chiếu" class="suatChieu">
+              <option value="45000">9h - 12h</option>
+              <option value="45000">13h – 16h</option>
+              <option value="55000">17h – 20h</option>
+              <option value="35000">22h – 2h</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Phòng chiếu</td>
+          <td>
+            <select name="Phòng chiếu" class="phongChieu">
+              <option value="1">Đồng</option>
+              <option value="1.2">Bạc</option>
+              <option value="1.5">Vàng</option>
+              <option value="2">Kim Cương</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Chọn chỗ ngồi</td>
+          <td>
+            <select name="Chỗ ngồi" class="choNgoi" multiple>
+              <option>Ghế 01</option>
+              <option>Ghế 02</option>
+              <option>Ghế 03</option>
+              <option>Ghế 04</option>
+              <option>Ghế 05</option>
+              <option>Ghế 06</option>
+              <option>Ghế 07</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center" colspan="2">
+            <button class="muaVe">Mua vé</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

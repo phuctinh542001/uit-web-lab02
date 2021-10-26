@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu 7 - Tại lớp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./themify-icons-font/themify-icons/themify-icons.css">
+</head>
+
+<body>
+
+    <form  id="dangkicv">
+        <table border="2 " cellpading="5 " align="center">
+            <tr>
+                <th class="header " colspan="2" style="text-align:center">Đăng kí CV</th>
+            </tr>
+            <tr>
+                <td class="thongtin ">Họ và tên</td>
+                <td>
+                    <input class="nhaptext " id="username" type="text " size="30 " name="hovaten " placeholder="Nguyễn Văn A ">
+                </td>
+            </tr>
+            <tr>
+                <td class="thongtin ">Địa chỉ</td>
+                <td>
+                    <input class="nhaptext " id="address" type="text " size="30 " name="diachi " placeholder="Bình Định ">
+                </td>
+            </tr>
+            <tr>
+                <td class="thongtin ">Điện thoại</td>
+                <td>
+                    <input class="nhaptext " id="tel" type="text " size="20 " name="dienthoai " placeholder="090000000 ">
+                </td>
+            </tr>
+            <tr>
+                <td class="thongtin ">Email</td>
+                <td>
+                    <input class="nhaptext " id="email" type="text " size="30 " name="email " placeholder="ex@gmail.com ">
+                </td>
+            </tr>
+            <tr>
+                <td class="thongtin ">Nghề nghiệp</td>
+                <td>
+                    <input class="nhaptext " id="job" type="text " size="30 " name="nghenghiep " placeholder="Designer ">
+                </td>
+            </tr>
+            <tr>
+                <td class="thongtin ">Ảnh đại diện</td>
+                <td>
+                    <input class="nhapavatar " id="avatar" type="file" size="20 " name="anhdaidien " onchange="loadFile(event)">
+                </td>
+            </tr>
+            <tr>
+                <td class="thongtin ">Kỹ năng</td>
+                <td>
+                    <div class="table-kynang">
+                        <table>
+                            <tr>
+                                <td id="nameSkill" class="thongtin ">Tên KN</td>
+                                <td class=" ">
+                                    <input class="nhaptext name-skill" type="text " size="30 " name="tenkynang " placeholder="Nhập kĩ năng bạn có">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="thongtin ">Mức độ</td>
+                                <td>
+                                    <input class="range-skill" onchange="updatePeople()" id="rand" type="range" size="30 " min="0" max="100" step="10">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <input type="button" class="skill-input" onclick="addSkill()" value="Thêm">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2 ">
+                    <input type="button" id="gui" value="Đăng kí" onclick="exportPeople()">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+td {
+    padding: 0 10px;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+tr {
+    height: 50px;
+}
+
+input {
+    height: 25px;
+    border-radius: 3px;
+    border: solid 0.5px rgb(71, 68, 68);
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+#nut_tinhluongthang {
+    cursor: pointer;
+    background-color: rgb(143, 142, 142);
+}

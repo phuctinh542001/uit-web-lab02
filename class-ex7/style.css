@@ -1,0 +1,124 @@
+html {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+table {
+    width: 40%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-top: 1px solid #dee2e6;
+    border-right: none;
+    border-left: none;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+#dangkicv .thongtin {
+    font-size: larger;
+    font-weight: bold;
+}
+
+#dangkicv .header {
+    line-height: 100%;
+    font-weight: 600;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+#dangkicv td {
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: black;
+}
+
+#dangkicv tr {
+    height: 30px;
+    overflow-x: auto;
+    margin-top: 0px;
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+#dangkicv .nhaptext {
+    height: 25px;
+    border-radius: 3px;
+    border: solid 0.5px rgb(71, 68, 68);
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+#dangkicv .table-kynang {
+    width: 100%;
+    border: none;
+}
+
+#dangkicv .table-kynang .themkynang {
+    color: white;
+    font-size: 20px;
+}
+
+#dangkicv #gui {
+    min-width: 100px;
+    min-height: 50px;
+    font-size: 20px;
+    color: white;
+    background: hsl(240, 2%, 19%);
+    border: none;
+    border-radius: 500px;
+    box-shadow: 12px 12px 24px rgba(2, 2, 2, 0.64);
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+#dangkicv #gui:hover {
+    background-color: rgba(88, 84, 80, 0.1);
+    color: black;
+}
+
+.skill-input {
+    margin-top: 8px;
+    width: 80px;
+    height: 24px;
+}
+
+/* Show */
+
+#show {
+    width: 500px;
+    height: 500px;
+    /* background: linear-gradient(to right, hsl(318, 66%, 27%), #c78585); */
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    padding: 20px 20px;
+}
+
+#show div {
+    margin: 20px 20px;
+}
+
+#show .icon {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    margin: 15px 15px;
+    font-size: larger;
+}
+
+#show span {
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+
+
+/*  */

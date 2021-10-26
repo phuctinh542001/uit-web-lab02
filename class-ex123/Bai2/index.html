@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Câu 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          tongtien = 0;
+          table_body = '<table border="1">';
+          table_body += "<tr><td>Các món đã dùng</td><td>Tiền</td></tr>";
+          $(".thucAn > option:selected").each(function () {
+            table_body += '<tr><td>' + $(this).text() +  '</td><td>' + $(this).val() + '</td></tr>';
+            tongtien += parseFloat($(this).val());
+          });
+          $(".nuocUong > option:selected").each(function () {
+            table_body += '<tr><td>' + $(this).text() +  '</td><td>' + $(this).val() + '</td></tr>';
+            tongtien += parseFloat($(this).val());
+          });
+          if($("input[name='thoiDiem']:checked").val() == "2") tongtien *= 1.1;
+          table_body += '<tr><td>Tổng tiền</td><td>' + tongtien + '</td></tr>'; 
+          table_body += "</table>";
+          $(".tableTien").html(table_body);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div style="width: 500px">
+      <center>
+        <span>Thực đơn</span>
+        <table border="1">
+          <tr>
+            <td>Thức ăn</td>
+            <td>Nước uống</td>
+            <td>Thời điểm</td>
+          </tr>
+          <tr>
+            <td>
+              <select class="thucAn" multiple>
+                <option value="20000">Bún bò</option>
+                <option value="18000">Hủ Tiếu</option>
+                <option value="17000">Bánh Canh</option>
+                <option value="19000">Phở bò</option>
+                <option value="15000">Nui</option>
+                <option value="12000">Bánh mì thịt</option>
+                <option value="15000">Bánh cuốn</option>
+              </select>
+            </td>
+            <td>
+              <select class="nuocUong" multiple>
+                <option value="12000">Cà phê đá</option>
+                <option value="15000">Cà phê sữa đá </option>
+                <option value="13000">Chanh dây</option>
+                <option value="12000">Chanh muối</option>
+                <option value="14000">Xí muội</option>
+                <option value="13000">Sửa tươi</option>
+                <option value="17000">Cam vắt</option>
+              </select>
+            </td>
+            <td>
+              <input type="radio" name="thoiDiem" value="1" /> Ban ngày <br />
+              <input type="radio" name="thoiDiem" value="2" /> Ban đêm <br />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <center>
+                <button type="button">Tính tiền</button>
+              </center>
+            </td>
+          </tr>
+        </table>
+        <div class="tableTien"></div>
+      </center>
+    </div>
+  </body>
+</html>

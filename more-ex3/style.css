@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFCB05;
+}
+
+#main {
+    width: 96%;
+    margin: auto;
+    text-align: center;
+}
+
+.title h1 {
+    margin-top: 20px;
+    font-size: 52px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: white;
+}
+
+.guide p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.guide p:nth-child(1) {
+    color: blue;
+}
+
+.guide p:nth-child(2) {
+    color: green;
+}
+
+.guide p:nth-child(3) {
+    color: red;
+}
+
+.work-input {
+    display: flex;
+    justify-content: center;
+}
+
+.work-input input {
+    width: 700px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 12px;
+}
+
+.work-input button {
+    margin-left: 16px;
+    width: 60px;
+    height: 40px;
+    background-color: #D98E04;
+    font-size: 20px;
+}
+
+.work-input button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.work-list {
+    display: inline-block;
+    margin: auto;
+    width: 800px;
+}
+
+.work-list .work-item {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    min-height: 60px;
+    background-color: #F2D57E;
+    border: 2px solid #353431;
+    border-radius: 10px;
+     align-items: center;
+}
+
+.work-list .work-item p {
+    display: inline-block;    
+    width: 96%;
+    padding-left: 16px;
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.work-list .work-item i {
+    display: inline-block;
+    width: 4%;
+    font-size: 32px;
+    line-height: 52px;
+    text-align: left;
+}
+
+.work-list .work-item i:hover {
+    color: white;
+    cursor: pointer;
+}
+

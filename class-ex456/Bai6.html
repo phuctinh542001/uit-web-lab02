@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Câu 6 - Tại lớp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="bai6.js"></script>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body style="background-color:  #FFDD99;">
+    <form method="get" id="form_register">
+      <h1 style="font-size: 24px;">PHIẾU ĐĂNG KÝ TOUR DU LỊCH</h1>
+      <table style="width: 25%" id="table_register">
+        <tr>
+          <td>Họ và tên khách</td>
+          <td><input type="text" class="tenKhach" placeholder="Họ Tên" /></td>
+        </tr>
+        <tr>
+          <td>Địa chỉ</td>
+          <td><input type="text" class="diaChi" placeholder="địa chỉ" /></td>
+        </tr>
+        <tr>
+          <td>Điện thoại</td>
+          <td>
+            <input type="text" class="dienThoai" placeholder="số điện thoại" />
+          </td>
+        </tr>
+        <tr>
+          <td>Tour</td>
+          <td>
+            <select class="tour">
+              <option value="10000000">Hà nội - Hạ Long - Tuần Châu</option>
+              <option value="6000000">Hà nội - Sapa</option>
+              <option value="3000000">Đà Nẵng - Hội An</option>
+              <option value="2000000">Buôn Mê Thuộc - Kon Tum</option>
+              <option value="3500000">TP.HCM - Nha Trang</option>
+              <option value="2500000 ">TP.HCM - Cần Thơ - Cà Mau</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Số lượng đoàn khách <br />
+            Người lớn
+            <input type="text" class="slnguoilon" size="4" value="" />Trẻ em
+            <input type="text" value="" class="sltreem" size="4" />
+          </td>
+        </tr>
+        <tr>
+          <td>Ghi chú</td>
+          <td><textarea class="ghiChu" cols="30" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+            <button class="dangKy">Đăng Ký</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
